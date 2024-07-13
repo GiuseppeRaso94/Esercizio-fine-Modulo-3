@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+#navLeft li a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white !important;
+}
+
+nav img {
+  height: 50px;
+}
+
+#navRight a img {
+  width: 50px;
+}

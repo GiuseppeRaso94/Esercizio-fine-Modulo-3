@@ -16,10 +16,63 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Netflix</title>
   </head>
-  <body class="bg-dark">
-    <nav class="container-fluid">
-      <!--Navbar Left-->
-      <!--Navbar Right-->
+  <body class="bg-dark text-white">
+    <nav class="container-fluid navbar-expand-lg p-3">
+      <div class="row d-flex justify-content-between align-items-center">
+        <!--Navbar Left-->
+        <div class="col d-flex align-items-center" id="navLeft">
+          <img src="./assets/Netflix_Logo_RGB.png" alt="Netflix Logo" />
+          <div class="collapse navbar-collapse">
+            <ul class="d-flex gap-3 m-0">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Tv Show</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Recently Added</a></li>
+              <li><a href="#">My List</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Navbar Right-->
+        <div
+          class="col d-flex justify-content-end align-items-center gap-3"
+          id="navRight"
+        >
+          <ion-icon name="search-outline"></ion-icon>
+          <span>Kids</span>
+          <ion-icon name="notifications-outline"></ion-icon>
+          <a
+            class="dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            ><img src="./assets/avatar 1.jpg" alt="Avatar Picture"
+          /></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item d-flex justify-content-center align-items-center gap-3 text-secondary"
+                href="#"
+                ><img src="./assets/avatar 2.jpg" alt="" />John</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item d-flex justify-content-center align-items-center gap-3 text-secondary"
+                href="#"
+                ><img src="./assets/avatar 3.png" alt="" />Alex</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item d-flex justify-content-center align-items-center gap-3 text-secondary"
+                href="#"
+                ><img src="./assets/avatar 4.jpg" alt="" />Jess</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <header></header>
     <main></main>
