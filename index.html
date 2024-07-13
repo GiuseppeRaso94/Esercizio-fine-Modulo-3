@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Netflix</title>
   </head>
-  <body class="bg-dark text-white">
-    <nav class="container-fluid navbar-expand-lg p-3">
+  <body class="text-white">
+    <nav class="container-fluid navbar-expand-lg px-5 py-4">
       <div class="row d-flex justify-content-between align-items-center">
         <!--Navbar Left-->
         <div class="col d-flex align-items-center" id="navLeft">
+          <!--Logo-->
           <img src="./assets/Netflix_Logo_RGB.png" alt="Netflix Logo" />
+          <!--Nav Sections-->
           <div class="collapse navbar-collapse">
             <ul class="d-flex gap-3 m-0">
               <li><a href="#">Home</a></li>
@@ -40,7 +42,8 @@
         >
           <ion-icon name="search-outline"></ion-icon>
           <span>Kids</span>
-          <ion-icon name="notifications-outline"></ion-icon>
+          <ion-icon name="notifications"></ion-icon>
+          <!--Profile Selection Dropdown Menu-->
           <a
             class="dropdown-toggle"
             href="#"
@@ -48,24 +51,24 @@
             data-bs-toggle="dropdown"
             ><img src="./assets/avatar 1.jpg" alt="Avatar Picture"
           /></a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu bg-black">
             <li>
               <a
-                class="dropdown-item d-flex justify-content-center align-items-center gap-3 text-secondary"
+                class="dropdown-item d-flex justify-content-center align-items-center gap-3"
                 href="#"
                 ><img src="./assets/avatar 2.jpg" alt="" />John</a
               >
             </li>
             <li>
               <a
-                class="dropdown-item d-flex justify-content-center align-items-center gap-3 text-secondary"
+                class="dropdown-item d-flex justify-content-center align-items-center gap-3"
                 href="#"
                 ><img src="./assets/avatar 3.png" alt="" />Alex</a
               >
             </li>
             <li>
               <a
-                class="dropdown-item d-flex justify-content-center align-items-center gap-3 text-secondary"
+                class="dropdown-item d-flex justify-content-center align-items-center gap-3"
                 href="#"
                 ><img src="./assets/avatar 4.jpg" alt="" />Jess</a
               >
@@ -74,7 +77,51 @@
         </div>
       </div>
     </nav>
-    <header></header>
+
+    <header class="container-fluid px-5">
+      <div class="row d-flex justify-content-between align-items-center">
+        <!--Header Left-->
+        <div class="col d-flex align-items-center gap-3">
+          <h1>TV Shows</h1>
+          <!--Genres Dropdown Menu-->
+          <div>
+            <a
+              class="dropdown-toggle bg-black border p-2"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
+            </a>
+            <ul class="dropdown-menu bg-black">
+              <li><a class="dropdown-item text-white" href="#">Action</a></li>
+              <li><a class="dropdown-item text-white" href="#">Thriller</a></li>
+              <li><a class="dropdown-item text-white" href="#">Reality</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Header Right-->
+        <div class="col d-flex justify-content-end align-items-center gap-1">
+          <div
+            class="border d-flex justify-content-center d-none d-md-block py-1 px-2"
+          >
+            <a class="" href="#">
+              <ion-icon class="text-white" name="menu"></ion-icon>
+            </a>
+          </div>
+          <div
+            class="border d-flex justify-content-center d-none d-md-block py-1 px-2"
+          >
+            <a href="#">
+              <ion-icon class="text-white" name="grid"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main></main>
     <footer></footer>
     <script

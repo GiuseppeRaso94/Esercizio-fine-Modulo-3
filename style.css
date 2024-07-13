@@ -1,8 +1,12 @@
+body {
+  background-color: rgb(20, 20, 20);
+}
+
 ul {
   list-style: none;
 }
 
-#navLeft li a {
+a {
   white-space: nowrap;
   text-decoration: none;
   color: white !important;
@@ -14,4 +18,12 @@ nav img {
 
 #navRight a img {
   width: 50px;
+}
+
+.dropdown-menu li a:hover {
+  color: black !important;
+}
+
+h1 {
+  white-space: nowrap;
 }
